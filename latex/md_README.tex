@@ -1,0 +1,741 @@
+\chapter{Release aprašymai}
+\hypertarget{md_README}{}\label{md_README}\index{Release aprašymai@{Release aprašymai}}
+\label{md_README_autotoc_md0}%
+\Hypertarget{md_README_autotoc_md0}%
+\hypertarget{md_README_autotoc_md1}{}\doxysection{\texorpdfstring{v.\+pradinė}{v.\+pradinė}}\label{md_README_autotoc_md1}
+Įvadimai studentų duomenys ir ir išvedami jų apskaičiuoti vidurkiai ar medianos į komdų eilutę\hypertarget{md_README_autotoc_md2}{}\doxysection{\texorpdfstring{v0.\+1}{v0.\+1}}\label{md_README_autotoc_md2}
+Galima generuoti studentų duomenis ir sukurtos 2 projekto versijos 1 -\/ naudojant std\+::vector, 2 -\/ naudojant c masyvus\hypertarget{md_README_autotoc_md3}{}\doxysection{\texorpdfstring{V0.\+2}{V0.\+2}}\label{md_README_autotoc_md3}
+Pridėtas duomenų įvesties į ir išvesties iš failo pasirinkimas, panaikinta c masyvą naudojanti programos versija\hypertarget{md_README_autotoc_md4}{}\doxysection{\texorpdfstring{V0.\+3}{V0.\+3}}\label{md_README_autotoc_md4}
+Pridėtas duomenų rūšiavimas pagal pasirinktus kriterijus\hypertarget{md_README_autotoc_md5}{}\doxysection{\texorpdfstring{V0.\+3.\+1}{V0.\+3.\+1}}\label{md_README_autotoc_md5}
+Klaidų žinutės lietuvių kalba\hypertarget{md_README_autotoc_md6}{}\doxysection{\texorpdfstring{V0.\+4}{V0.\+4}}\label{md_README_autotoc_md6}
+Sukurtas README.\+md failas kuriami surašyti programos spartos matmenys ir pridėtas studentų failo generavimo funkcionalumas\hypertarget{md_README_autotoc_md7}{}\doxysection{\texorpdfstring{V0.\+4.\+1}{V0.\+4.\+1}}\label{md_README_autotoc_md7}
+Pataisyti ir papildyti matavimai, klaidų ištaisymas\hypertarget{md_README_autotoc_md8}{}\doxysection{\texorpdfstring{V0.\+4.\+2}{V0.\+4.\+2}}\label{md_README_autotoc_md8}
+Klaidos pataisymas\hypertarget{md_README_autotoc_md9}{}\doxysection{\texorpdfstring{V1.\+0 pradinis relizas}{V1.\+0 pradinis relizas}}\label{md_README_autotoc_md9}
+Sukurtos papildomai dvi programos veikimo versijos, papildytas README programos veikimo spartos matmenimis ir testavimo detalėmis\hypertarget{md_README_autotoc_md10}{}\doxysection{\texorpdfstring{V1.\+1}{V1.\+1}}\label{md_README_autotoc_md10}
+Studentas perkeltas į klasę\hypertarget{md_README_autotoc_md11}{}\doxysection{\texorpdfstring{V1.\+2}{V1.\+2}}\label{md_README_autotoc_md11}
+Relizuota "{}\+Rule of five"{} ir įvesties/išvesties operatorius Student klasėje\hypertarget{md_README_autotoc_md12}{}\doxysection{\texorpdfstring{V1.\+5}{V1.\+5}}\label{md_README_autotoc_md12}
+Sukurta bazinė klasė žmogus(\+Person) ir pritaikyta Studnet klasei\hypertarget{md_README_autotoc_md13}{}\doxysection{\texorpdfstring{V2.\+0}{V2.\+0}}\label{md_README_autotoc_md13}
+Sukurti Doxygen HTML ir PDF dokumentacija, pridėti unit testai naudojant gtest\hypertarget{md_README_autotoc_md14}{}\doxysection{\texorpdfstring{Naudojimos instrukcija}{Naudojimos instrukcija}}\label{md_README_autotoc_md14}
+
+\begin{DoxyItemize}
+\item Paleidimas\+: Nueiti į norimo naudojimo konteinerio build aplankalą ir paleisti programą "{}1-\/oji-\/uzduotis"{}
+\item Skaičiavimų atlikimas\+:
+\begin{DoxyEnumerate}
+\item Paleidus programą duodamas pasirinkimas 1-\/6, jeigu norite atlikti skaičiavimus su studentai pasirinkite 1-\/4 pagal poreikį (ką pasirinkimai daro bus aprašyta programos veikimo metu)
+\item Jeigu pasirinkote 4 pasirinkimą įvesikte studentų failo pavadinimą (studentų failas turi būti tame pačiame aplankale iš kurios ir paleidote programą)
+\item Pasirinkite rūšiavimo būdą (vidurkių ir medianų rūšiavimas yra nuo mažiausio iki didžiausio)
+\item Pasirinkite išvesties būdą
+\item Pasirinkite skirstymo strategiją
+\item Jeigu pasirinkote įrašyti pažimius ranka ar generuoti juos sekite pragramoje nurodytas instrukcijas
+\end{DoxyEnumerate}
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md15}{}\doxysection{\texorpdfstring{Diegimo instrukcija}{Diegimo instrukcija}}\label{md_README_autotoc_md15}
+
+\begin{DoxyEnumerate}
+\item Nueikite į norimos programos versijos aplankalo (Deque/\+List/\+Vector)
+\begin{DoxyItemize}
+\item {\ttfamily cd \doxylink{classVector}{Vector}} ~\newline
+ Arba
+\item {\ttfamily cd List} ~\newline
+ Arba
+\item {\ttfamily cd Deque}
+\end{DoxyItemize}
+\item Sukurkite build aplankalą ir įeikite į jį~\newline
+{\ttfamily mkdir build \&\& cd build}
+\item Paleiskite cmake comandą ~\newline
+ {\ttfamily cmake ..}
+\item Išeikite iš aplankalo ir sukompiliuokite programą ~\newline
+ {\ttfamily cd .. \&\& cmake -\/-\/build build}
+\item Pragrama bus build aplankale su pavadinimu "{}1-\/oji-\/uzduotis"{}
+\end{DoxyEnumerate}\hypertarget{md_README_autotoc_md16}{}\doxysection{\texorpdfstring{Tyrimai}{Tyrimai}}\label{md_README_autotoc_md16}
+\hypertarget{md_README_autotoc_md17}{}\doxysubsubsection{\texorpdfstring{Matavimo sistemos parametrai\+:}{Matavimo sistemos parametrai\+:}}\label{md_README_autotoc_md17}
+\begin{quote}
+{\bfseries{CPU}}\+: 7800x3d \textbackslash{} {\bfseries{RAM}}\+: 32GB \texorpdfstring{$\vert$}{|} 6000 MT/s \textbackslash{} {\bfseries{SSD}}\+: NVMe M.\+2 \texorpdfstring{$\vert$}{|} 7,000/7,000MB/s read/write \end{quote}
+\hypertarget{md_README_autotoc_md18}{}\doxysubsection{\texorpdfstring{Pirmas tyrimas (Failų kūrimas ir jų uždarymas)}{Pirmas tyrimas (Failų kūrimas ir jų uždarymas)}}\label{md_README_autotoc_md18}
+
+\begin{DoxyItemize}
+\item Kiekvienas studentas turi po 10 namų darbų rezultatų + egzaminas
+\item Laiko matavimui naudoajam {\ttfamily chrono} biblioteka
+\item Matavimai atliekami penkis kartus ir iš jų išgaunami vidurkiai
+\item Kodas buvo sukompiliuotas naudojant -\/O3 gaire
+\end{DoxyItemize}
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+1,000   &866 μs   &966 μs   &877 μs   &792 μs   &936 μs   &887 μs    \\\cline{1-7}
+10,000   &6486 μs   &6903 μs   &6497 μs   &6364 μs   &6307 μs   &6511 μs    \\\cline{1-7}
+100,000   &68 ms   &66 ms   &65 ms   &66 ms   &67 ms   &66 ms    \\\cline{1-7}
+1,000,000   &594 ms   &592 ms   &587 ms   &595 ms   &608 ms   &595 ms    \\\cline{1-7}
+10,000,000   &5917 ms   &5827 ms   &5871 ms   &5843 ms   &5887 ms   &5869 ms   \\\cline{1-7}
+\end{longtabu}
+
+
+\texorpdfstring{$>$}{>}Failo kūrimo pavizdys\+:  \hypertarget{md_README_autotoc_md19}{}\doxysubsection{\texorpdfstring{Antrasis tyrimas (Duomenų apdorojimas)}{Antrasis tyrimas (Duomenų apdorojimas)}}\label{md_README_autotoc_md19}
+
+\begin{DoxyItemize}
+\item Laiko matavimui naudoajam {\ttfamily chrono} biblioteka
+\item Duomenys gaunaumi iš ankščiau sugeneruotų failų
+\item Kiekvienas studentas turi po 10 namų darbų rezultatų + egzaminas
+\item Matavimai atliekami penkis kartus ir iš jų išgaunami vidurkiai
+\item Matuojami vykdomi su penkiais skirtingais failo dydžiais
+\item Kodas buvo sukompiliuotas naudojant -\/O3 gaire
+\item Matuojami\+:
+\begin{DoxyItemize}
+\item nuskaitymas iš failo
+\item studentų rūšiavimą į dvi grupes/kategorijas
+\item surūšiuotų studentų išvedimą į du naujus failus
+\item visos programos veikimo laikas
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md20}{}\doxysubsubsection{\texorpdfstring{1,000 studentų}{1,000 studentų}}\label{md_README_autotoc_md20}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &545 μs   &639 μs   &518 μs   &509 μs   &485 μs   &539 μs    \\\cline{1-7}
+Rūšiavimas   &101 μs   &134 μs   &100 μs   &101 μs   &101 μs   &107 μs    \\\cline{1-7}
+Išvedimas   &340 μs   &435 μs   &394 μs   &362 μs   &369 μs   &380 μs    \\\cline{1-7}
+Veikimo laikas   &1092 μs   &1334 μs   &1113 μs   &1076 μs   &1056 μs   &1134 μs   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md21}{}\doxysubsubsection{\texorpdfstring{10,000 studentų}{10,000 studentų}}\label{md_README_autotoc_md21}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &5524 μs   &5118 μs   &5430 μs   &5809 μs   &5024 μs   &5381 μs    \\\cline{1-7}
+Rūšiavimas   &1043 μs   &1129 μs   &1133 μs   &1107 μs   &1106 μs   &1104 μs    \\\cline{1-7}
+Išvedimas   &2795 μs   &2835 μs   &2870 μs   &2859 μs   &2770 μs   &2826 μs    \\\cline{1-7}
+Veikimo laikas   &10321 μs   &10053 μs   &10386 μs   &10760 μs   &9873 μs   &10279 μs   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md22}{}\doxysubsubsection{\texorpdfstring{100,000 studentų}{100,000 studentų}}\label{md_README_autotoc_md22}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &47 ms   &48 ms   &46 ms   &49 ms   &47 ms   &47 ms    \\\cline{1-7}
+Rūšiavimas   &7 ms   &7 ms   &6 ms   &6 ms   &6 ms   &6 ms    \\\cline{1-7}
+Išvedimas   &27 ms   &27 ms   &25 ms   &32 ms   &33 ms   &29 ms    \\\cline{1-7}
+Veikimo laikas   &90 ms   &92 ms   &88 ms   &98 ms   &97 ms   &93 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md23}{}\doxysubsubsection{\texorpdfstring{1,000,000 studentų}{1,000,000 studentų}}\label{md_README_autotoc_md23}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &440 ms   &443 ms   &443 ms   &444 ms   &444 ms   &443 ms    \\\cline{1-7}
+Rūšiavimas   &51 ms   &51 ms   &53 ms   &50 ms   &52 ms   &51 ms    \\\cline{1-7}
+Išvedimas   &270 ms   &273 ms   &275 ms   &267 ms   &268 ms   &270 ms    \\\cline{1-7}
+Veikimo laikas   &848 ms   &855 ms   &859 ms   &849 ms   &853 ms   &853 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md24}{}\doxysubsubsection{\texorpdfstring{10,000,000 studentų}{10,000,000 studentų}}\label{md_README_autotoc_md24}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &4476 ms   &4483 ms   &4502 ms   &4465 ms   &4491 ms   &4483 ms    \\\cline{1-7}
+Rūšiavimas   &668 ms   &677 ms   &685 ms   &670 ms   &679 ms   &676 ms    \\\cline{1-7}
+Išvedimas   &2602 ms   &2628 ms   &2586 ms   &2640 ms   &2665 ms   &2624 ms    \\\cline{1-7}
+Veikimo laikas   &8686 ms   &8750 ms   &8730 ms   &8727 ms   &8781 ms   &8735 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md25}{}\doxysubsection{\texorpdfstring{Trečias tyrimas (Konteinerių testavimas)}{Trečias tyrimas (Konteinerių testavimas)}}\label{md_README_autotoc_md25}
+
+\begin{DoxyItemize}
+\item Laiko matavimui naudoajam {\ttfamily chrono} biblioteka
+\item Duomenys gaunaumi iš ankščiau sugeneruotų failų
+\item Kiekvienas studentas turi po 10 namų darbų rezultatų + egzaminas
+\item Matavimai atliekami penkis kartus ir iš jų išgaunami vidurkiai
+\item Matuojami vykdomi su penkiais skirtingais failo dydžiais
+\item Kodas buvo sukompiliuotas naudojant -\/O3 gaire
+\item Duomenys rūšiuojami studento pažymių vidurkio didėjimo tvarka
+\item Matuojas\+:
+\begin{DoxyItemize}
+\item Duomenų nuskaitymas iš failų į atitinkamą konteinerį
+\item Studentų rūšiavimas didėjimo tvarką konteineryje
+\item Studentų skirstymas į dvi grupes/kategorijas
+\end{DoxyItemize}
+\item Studentams saugoti bus naudojami 4 skirtingi konteineriai\+:
+\begin{DoxyItemize}
+\item {\ttfamily std\+::vector}
+\item {\ttfamily std\+::list}
+\item {\ttfamily std\+::deque}
+\item Mano sukurta {\ttfamily \doxylink{classVector}{Vector}} klasė
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md26}{}\doxysubsection{\texorpdfstring{Naudojant {\ttfamily std\+::vector}}{Naudojant {\ttfamily std\+::vector}}}\label{md_README_autotoc_md26}
+\hypertarget{md_README_autotoc_md27}{}\doxysubsubsection{\texorpdfstring{1,000 studentų}{1,000 studentų}}\label{md_README_autotoc_md27}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &504 μs   &573 μs   &582 μs   &609 μs   &495 μs   &552 μs    \\\cline{1-7}
+Rušiavimas   &53 μs   &65 μs   &67 μs   &64 μs   &52 μs   &60 μs    \\\cline{1-7}
+Skirstymas   &98 μs   &119 μs   &112 μs   &122 μs   &99 μs   &110 μs   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md28}{}\doxysubsubsection{\texorpdfstring{10,000 studentų}{10,000 studentų}}\label{md_README_autotoc_md28}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &5396 μs   &5124 μs   &5232 μs   &4846 μs   &5028 μs   &5125 μs    \\\cline{1-7}
+Rušiavimas   &826 μs   &745 μs   &785 μs   &939 μs   &943 μs   &847 μs    \\\cline{1-7}
+Skirstymas   &955 μs   &941 μs   &965 μs   &997 μs   &1099 μs   &991 μs   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md29}{}\doxysubsubsection{\texorpdfstring{100,000 studentų}{100,000 studentų}}\label{md_README_autotoc_md29}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &49040 μs   &46073 μs   &48257 μs   &49288 μs   &50360 μs   &48603 μs    \\\cline{1-7}
+Rušiavimas   &11722 μs   &12060 μs   &11927 μs   &12071 μs   &12136 μs   &11983 μs    \\\cline{1-7}
+Skirstymas   &9479 μs   &9184 μs   &8919 μs   &9446 μs   &9274 μs   &9260 μs   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md30}{}\doxysubsubsection{\texorpdfstring{1,000,000 studentų}{1,000,000 studentų}}\label{md_README_autotoc_md30}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &430 ms   &435 ms   &437 ms   &443 ms   &436 ms   &436 ms    \\\cline{1-7}
+Rušiavimas   &134 ms   &140 ms   &145 ms   &141 ms   &136 ms   &139 ms    \\\cline{1-7}
+Skirstymas   &111 ms   &109 ms   &110 ms   &110 ms   &109 ms   &109 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md31}{}\doxysubsubsection{\texorpdfstring{10,000,000 studentų}{10,000,000 studentų}}\label{md_README_autotoc_md31}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &4414 ms   &4401 ms   &4396 ms   &4444 ms   &4414 ms   &4413 ms    \\\cline{1-7}
+Rušiavimas   &1743 ms   &1665 ms   &1729 ms   &1722 ms   &1660 ms   &1703 ms    \\\cline{1-7}
+Skirstymas   &1350 ms   &1357 ms   &1348 ms   &1343 ms   &1350 ms   &1349 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md32}{}\doxysubsection{\texorpdfstring{Naudojant {\ttfamily std\+::list}}{Naudojant {\ttfamily std\+::list}}}\label{md_README_autotoc_md32}
+\hypertarget{md_README_autotoc_md33}{}\doxysubsubsection{\texorpdfstring{1,000 studentų}{1,000 studentų}}\label{md_README_autotoc_md33}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &560 μs   &576 μs   &606 μs   &485 μs   &594 μs   &564 μs    \\\cline{1-7}
+Rušiavimas   &52 μs   &64 μs   &66 μs   &52 μs   &65 μs   &59 μs    \\\cline{1-7}
+Skirstymas   &99 μs   &121 μs   &119 μs   &94 μs   &126 μs   &111 μs   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md34}{}\doxysubsubsection{\texorpdfstring{10,000 studentų}{10,000 studentų}}\label{md_README_autotoc_md34}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &4843 μs   &5330 μs   &4923 μs   &4755 μs   &5391 μs   &5048 μs    \\\cline{1-7}
+Rušiavimas   &761 μs   &738 μs   &756 μs   &757 μs   &735 μs   &749 μs    \\\cline{1-7}
+Skirstymas   &1005 μs   &1068 μs   &894 μs   &882 μs   &963 μs   &962 μs   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md35}{}\doxysubsubsection{\texorpdfstring{100,000 studentų}{100,000 studentų}}\label{md_README_autotoc_md35}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &47977 μs   &47000 μs   &48757 μs   &49032 μs   &59094 μs   &50372 μs    \\\cline{1-7}
+Rušiavimas   &12449 μs   &12087 μs   &12294 μs   &12273 μs   &12074 μs   &12235 μs    \\\cline{1-7}
+Skirstymas   &9721 μs   &9184 μs   &10342 μs   &9746 μs   &9834 μs   &9765 μs   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md36}{}\doxysubsubsection{\texorpdfstring{1,000,000 studentų}{1,000,000 studentų}}\label{md_README_autotoc_md36}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &476 ms   &472 ms   &477 ms   &477 ms   &473 ms   &475 ms    \\\cline{1-7}
+Rušiavimas   &285 ms   &233 ms   &256 ms   &243 ms   &233 ms   &250 ms    \\\cline{1-7}
+Skirstymas   &167 ms   &155 ms   &168 ms   &165 ms   &162 ms   &163 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md37}{}\doxysubsubsection{\texorpdfstring{10,000,000 studentų}{10,000,000 studentų}}\label{md_README_autotoc_md37}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &4643 ms   &4681 ms   &4723 ms   &4707 ms   &4613 ms   &4673 ms    \\\cline{1-7}
+Rušiavimas   &5225 ms   &5597 ms   &5502 ms   &5185 ms   &5349 ms   &5371 ms    \\\cline{1-7}
+Skirstymas   &1647 ms   &1710 ms   &1669 ms   &1654 ms   &1658 ms   &1667 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md38}{}\doxysubsection{\texorpdfstring{Naudojant {\ttfamily std\+::deque}}{Naudojant {\ttfamily std\+::deque}}}\label{md_README_autotoc_md38}
+\hypertarget{md_README_autotoc_md39}{}\doxysubsubsection{\texorpdfstring{1,000 studentų}{1,000 studentų}}\label{md_README_autotoc_md39}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &589 μs   &511 μs   &480 μs   &565 μs   &593 μs   &547 μs    \\\cline{1-7}
+Rušiavimas   &133 μs   &108 μs   &100 μs   &124 μs   &126 μs   &118 μs    \\\cline{1-7}
+Skirstymas   &102 μs   &84 μs   &81 μs   &99 μs   &91 μs   &91 μs   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md40}{}\doxysubsubsection{\texorpdfstring{10,000 studentų}{10,000 studentų}}\label{md_README_autotoc_md40}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &4974 μs   &4865 μs   &4524 μs   &4909 μs   &4793 μs   &4813 μs    \\\cline{1-7}
+Rušiavimas   &1103 μs   &1213 μs   &1129 μs   &1070 μs   &1106 μs   &1124 μs    \\\cline{1-7}
+Skirstymas   &891 μs   &814 μs   &760 μs   &852 μs   &768 μs   &817 μs   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md41}{}\doxysubsubsection{\texorpdfstring{100,000 studentų}{100,000 studentų}}\label{md_README_autotoc_md41}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &45226 μs   &45315 μs   &57134 μs   &46732 μs   &45353 μs   &47952 μs    \\\cline{1-7}
+Rušiavimas   &13310 μs   &13076 μs   &13947 μs   &12625 μs   &12929 μs   &13177 μs    \\\cline{1-7}
+Skirstymas   &8509 μs   &8437 μs   &8048 μs   &8168 μs   &8224 μs   &8277 μs   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md42}{}\doxysubsubsection{\texorpdfstring{1,000,000 studentų}{1,000,000 studentų}}\label{md_README_autotoc_md42}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &453 ms   &461 ms   &458 ms   &452 ms   &453 ms   &455 ms    \\\cline{1-7}
+Rušiavimas   &159 ms   &166 ms   &155 ms   &164 ms   &164 ms   &161 ms    \\\cline{1-7}
+Skirstymas   &128 ms   &132 ms   &140 ms   &136 ms   &127 ms   &132 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md43}{}\doxysubsubsection{\texorpdfstring{10,000,000 studentų}{10,000,000 studentų}}\label{md_README_autotoc_md43}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &4520 ms   &4489 ms   &4540 ms   &4530 ms   &5122 ms   &4640 ms    \\\cline{1-7}
+Rušiavimas   &2040 ms   &1952 ms   &1952 ms   &1982 ms   &1969 ms   &1979 ms    \\\cline{1-7}
+Skirstymas   &1496 ms   &1479 ms   &1503 ms   &1482 ms   &1500 ms   &1492 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md44}{}\doxysubsection{\texorpdfstring{Naudojant naują Vector klasę}{Naudojant naują Vector klasę}}\label{md_README_autotoc_md44}
+\hypertarget{md_README_autotoc_md45}{}\doxysubsubsection{\texorpdfstring{1,000 studnetų}{1,000 studnetų}}\label{md_README_autotoc_md45}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &582 μs   &565 μs   &576 μs   &696 μs   &596 μs   &603 μs    \\\cline{1-7}
+Rušiavimas   &133 μs   &129 μs   &129 μs   &129 μs   &136 μs   &131 μs    \\\cline{1-7}
+Skirstymas   &152 μs   &146 μs   &151 μs   &156 μs   &144 μs   &150 μs   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md46}{}\doxysubsubsection{\texorpdfstring{10,000 studentų}{10,000 studentų}}\label{md_README_autotoc_md46}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &6914 μs   &7813 μs   &6592 μs   &6308 μs   &6574 μs   &6840 μs    \\\cline{1-7}
+Rušiavimas   &1801 μs   &1753 μs   &1473 μs   &1493 μs   &1813 μs   &1667 μs    \\\cline{1-7}
+Skirstymas   &2303 μs   &2246 μs   &2304 μs   &2066 μs   &2123 μs   &2208 μs   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md47}{}\doxysubsubsection{\texorpdfstring{100,000 studentų}{100,000 studentų}}\label{md_README_autotoc_md47}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &56841 μs   &53579 μs   &54079 μs   &58699 μs   &54874 μs   &55614 μs    \\\cline{1-7}
+Rušiavimas   &18657 μs   &19323 μs   &19014 μs   &18681 μs   &18608 μs   &18857 μs    \\\cline{1-7}
+Skirstymas   &17205 μs   &12676 μs   &12705 μs   &13748 μs   &12706 μs   &13808 μs   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md48}{}\doxysubsubsection{\texorpdfstring{1,000,000 studentų}{1,000,000 studentų}}\label{md_README_autotoc_md48}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &524 ms   &508 ms   &508 ms   &507 ms   &498 ms   &509 ms    \\\cline{1-7}
+Rušiavimas   &232 ms   &232 ms   &227 ms   &232 ms   &236 ms   &232 ms    \\\cline{1-7}
+Skirstymas   &291 ms   &286 ms   &276 ms   &257 ms   &270 ms   &276 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md49}{}\doxysubsubsection{\texorpdfstring{10,000,000 studentų}{10,000,000 studentų}}\label{md_README_autotoc_md49}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Matavimas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+Nuskaitymas   &6073 ms   &5933 ms   &5660 ms   &5653 ms   &5420 ms   &5758 ms    \\\cline{1-7}
+Rušiavimas   &2954 ms   &2883 ms   &2832 ms   &2834 ms   &2942 ms   &2889 ms    \\\cline{1-7}
+Skirstymas   &3855 ms   &3704 ms   &3552 ms   &3355 ms   &3298 ms   &3553 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md50}{}\doxysubsection{\texorpdfstring{Ketvirtas tyrimas (Skirstymas)}{Ketvirtas tyrimas (Skirstymas)}}\label{md_README_autotoc_md50}
+
+\begin{DoxyItemize}
+\item Laiko matavimui naudoajam {\ttfamily chrono} biblioteka
+\item Duomenys gaunaumi iš ankščiau sugeneruotų failų
+\item Kiekvienas studentas turi po 10 namų darbų rezultatų + egzaminas
+\item Matavimai atliekami penkis kartus ir iš jų išgaunami vidurkiai
+\item Kodas buvo sukompiliuotas naudojant -\/O3 gaire
+\item Matuojami vykdomi su penkiais skirtingais failo dydžiais
+\item Duomenys nerūšiuojami
+\item Naudojamos 3 strategijos\+:
+\end{DoxyItemize}
+\begin{DoxyEnumerate}
+\item Bendro studentai konteinerio skaidymas (rūšiavimas) į du naujus to paties tipo konteinerius
+\item Bendro studentų konteinerio skaidymas (rūšiavimas) panaudojant tik vieną naują konteinerį
+\item Bendro studentų konteinerio skaidymas (rūšiavimas) panaudojant "{}efektyvius"{} darbo su konteineriais metodus ({\ttfamily erase}, {\ttfamily remove\+\_\+if})
+\end{DoxyEnumerate}\hypertarget{md_README_autotoc_md51}{}\doxysubsubsection{\texorpdfstring{Vector}{Vector}}\label{md_README_autotoc_md51}
+\hypertarget{md_README_autotoc_md52}{}\doxysubsubsection{\texorpdfstring{1 Strategija}{1 Strategija}}\label{md_README_autotoc_md52}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+1,000   &86 μs   &82 μs   &103 μs   &87 μs   &80 μs   &87 μs    \\\cline{1-7}
+10,000   &1064 μs   &1212 μs   &1122 μs   &1155 μs   &1119 μs   &1134 μs    \\\cline{1-7}
+100,000   &7906 μs   &7346 μs   &7287 μs   &7355 μs   &7335 μs   &7445 μs    \\\cline{1-7}
+1,000,000   &52 ms   &53 ms   &53 ms   &49 ms   &53 ms   &52 ms    \\\cline{1-7}
+10,000,000   &711 ms   &707 ms   &701 ms   &699 ms   &707 ms   &705 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md53}{}\doxysubsubsection{\texorpdfstring{2 Strategija}{2 Strategija}}\label{md_README_autotoc_md53}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+1,000   &58 μs   &70 μs   &71 μs   &60 μs   &69 μs   &65 μs    \\\cline{1-7}
+10,000   &807 μs   &761 μs   &796 μs   &769 μs   &737 μs   &774 μs    \\\cline{1-7}
+100,000   &6122 μs   &5950 μs   &6083 μs   &6338 μs   &5944 μs   &6087 μs    \\\cline{1-7}
+1,000,000   &46 ms   &47 ms   &46 ms   &46 ms   &47 ms   &46 ms    \\\cline{1-7}
+10,000,000   &571 ms   &570 ms   &560 ms   &562 ms   &564 ms   &565 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md54}{}\doxysubsubsection{\texorpdfstring{3 Strategija}{3 Strategija}}\label{md_README_autotoc_md54}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+1,000   &36 μs   &41 μs   &48 μs   &43 μs   &40 μs   &41 μs    \\\cline{1-7}
+10,000   &616 μs   &562 μs   &571 μs   &614 μs   &614 μs   &595 μs    \\\cline{1-7}
+100,000   &4613 μs   &4101 μs   &4130 μs   &4014 μs   &3839 μs   &4139 μs    \\\cline{1-7}
+1,000,000   &28 ms   &28 ms   &29 ms   &29 ms   &33 ms   &29 ms    \\\cline{1-7}
+10,000,000   &355 ms   &356 ms   &354 ms   &355 ms   &351 ms   &354 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md55}{}\doxysubsubsection{\texorpdfstring{List}{List}}\label{md_README_autotoc_md55}
+\hypertarget{md_README_autotoc_md56}{}\doxysubsubsection{\texorpdfstring{1 Strategija}{1 Strategija}}\label{md_README_autotoc_md56}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+1,000   &138 μs   &103 μs   &97 μs   &103 μs   &119 μs   &112 μs    \\\cline{1-7}
+10,000   &1207 μs   &1020 μs   &1117 μs   &953 μs   &994 μs   &1058 μs    \\\cline{1-7}
+100,000   &9856 μs   &9813 μs   &9280 μs   &9690 μs   &10011 μs   &9730 μs    \\\cline{1-7}
+1,000,000   &96 ms   &100 ms   &97 ms   &97 ms   &98 ms   &97 ms    \\\cline{1-7}
+10,000,000   &946 ms   &956 ms   &956 ms   &948 ms   &1000 ms   &961 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md57}{}\doxysubsubsection{\texorpdfstring{2 Strategija}{2 Strategija}}\label{md_README_autotoc_md57}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+1,000   &17 μs   &21 μs   &18 μs   &25 μs   &16 μs   &19 μs    \\\cline{1-7}
+10,000   &218 μs   &177 μs   &175 μs   &181 μs   &179 μs   &186 μs    \\\cline{1-7}
+100,000   &1699 μs   &1693 μs   &1693 μs   &1682 μs   &1678 μs   &1689 μs    \\\cline{1-7}
+1,000,000   &16 ms   &17 ms   &17 ms   &17 ms   &16 ms   &16 ms    \\\cline{1-7}
+10,000,000   &172 ms   &172 ms   &173 ms   &170 ms   &170 ms   &171 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md58}{}\doxysubsubsection{\texorpdfstring{3 Strategija}{3 Strategija}}\label{md_README_autotoc_md58}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+1,000   &60 μs   &50 μs   &63 μs   &49 μs   &50 μs   &54 μs    \\\cline{1-7}
+10,000   &529 μs   &517 μs   &674 μs   &553 μs   &677 μs   &590 μs    \\\cline{1-7}
+100,000   &5377 μs   &5615 μs   &5088 μs   &5006 μs   &5225 μs   &5262 μs    \\\cline{1-7}
+1,000,000   &66 ms   &69 ms   &68 ms   &68 ms   &66 ms   &67 ms    \\\cline{1-7}
+10,000,000   &668 ms   &668 ms   &685 ms   &665 ms   &676 ms   &672 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md59}{}\doxysubsubsection{\texorpdfstring{Deque}{Deque}}\label{md_README_autotoc_md59}
+\hypertarget{md_README_autotoc_md60}{}\doxysubsubsection{\texorpdfstring{1 Strategija}{1 Strategija}}\label{md_README_autotoc_md60}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+1,000   &84 μs   &85 μs   &138 μs   &107 μs   &84 μs   &99 μs    \\\cline{1-7}
+10,000   &844 μs   &804 μs   &786 μs   &898 μs   &832 μs   &832 μs    \\\cline{1-7}
+100,000   &10858 μs   &8951 μs   &8304 μs   &7947 μs   &8524 μs   &8916 μs    \\\cline{1-7}
+1,000,000   &82 ms   &84 ms   &80 ms   &80 ms   &80 ms   &81 ms    \\\cline{1-7}
+10,000,000   &820 ms   &818 ms   &810 ms   &820 ms   &819 ms   &817 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md61}{}\doxysubsubsection{\texorpdfstring{2 Strategija}{2 Strategija}}\label{md_README_autotoc_md61}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+1,000   &37 μs   &34 μs   &33 μs   &35 μs   &29 μs   &33 μs    \\\cline{1-7}
+10,000   &248 μs   &249 μs   &250 μs   &266 μs   &257 μs   &254 μs    \\\cline{1-7}
+100,000   &2483 μs   &2414 μs   &2526 μs   &2483 μs   &2520 μs   &2485 μs    \\\cline{1-7}
+1,000,000   &24 ms   &24 ms   &24 ms   &24 ms   &23 ms   &23 ms    \\\cline{1-7}
+10,000,000   &243 ms   &253 ms   &239 ms   &243 ms   &243 ms   &244 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md62}{}\doxysubsubsection{\texorpdfstring{3 Strategija}{3 Strategija}}\label{md_README_autotoc_md62}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Studentu sk.   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+1,000   &47 μs   &48 μs   &53 μs   &57 μs   &58 μs   &52 μs    \\\cline{1-7}
+10,000   &460 μs   &446 μs   &452 μs   &425 μs   &436 μs   &443 μs    \\\cline{1-7}
+100,000   &4231 μs   &4184 μs   &4566 μs   &4238 μs   &4094 μs   &4262 μs    \\\cline{1-7}
+1,000,000   &49 ms   &46 ms   &48 ms   &49 ms   &48 ms   &48 ms    \\\cline{1-7}
+10,000,000   &465 ms   &466 ms   &467 ms   &465 ms   &468 ms   &466 ms   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md63}{}\doxysubsection{\texorpdfstring{Penktas tyrimas (Struct vs Class)}{Penktas tyrimas (Struct vs Class)}}\label{md_README_autotoc_md63}
+
+\begin{DoxyItemize}
+\item Laiko matavimui naudoajam {\ttfamily chrono} biblioteka
+\item Duomenys gaunaumi iš ankščiau sugeneruotų failų
+\item Kiekvienas studentas turi po 10 namų darbų rezultatų + egzaminas
+\item Matavimai atliekami penkis kartus ir iš jų išgaunami vidurkiai
+\item Matuojami du kodo atvėjai, Vienas naudojant Struktūras studentams kitas klases
+\item Matavimui naudajami tik 1,000,000 ir 10,000,000 studentų kiekiai
+\item Matavimui bus lyginami -\/O1, -\/O2 ir -\/O3 kompiliavmo gairės (3 atvėjai, kodo veikimo greitis ir bin failo dydis)
+\item Matuojamas pilnas programos veikimo laikas (neskaitant vartotojo įvesties)
+\item Naudojamas vector tipo konteineris studentų masyui saugoti
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md64}{}\doxysubsubsection{\texorpdfstring{Veikimo greitis -\/O1}{Veikimo greitis -\/O1}}\label{md_README_autotoc_md64}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ (stud. sk.) Duom. tipas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ (stud. sk.) Duom. tipas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+(1,000,000) Klasė   &1562 ms   &1619 ms   &1616 ms   &1630 ms   &1593 ms   &1604 ms    \\\cline{1-7}
+(1,000,000) Struktūra   &1306 ms   &1333 ms   &1321 ms   &1328 ms   &1311 ms   &1319 ms    \\\cline{1-7}
+(10,000,000) Klasė   &17244 ms   &17597 ms   &17800 ms   &17520 ms   &17590 ms   &17550 ms    \\\cline{1-7}
+(10,000,000) Struktūra   &13950 ms   &14018 ms   &14012 ms   &14125 ms   &14019 ms   &14024 ms   \\\cline{1-7}
+\end{longtabu}
+
+
+Klasės metodo bin dydis\+: 107.\+94 KiB Struktūros metodo bin dydis\+: 110.\+88 KiB\hypertarget{md_README_autotoc_md65}{}\doxysubsubsection{\texorpdfstring{Veikimo greitis -\/O2}{Veikimo greitis -\/O2}}\label{md_README_autotoc_md65}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ (stud. sk.) Duom. tipas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ (stud. sk.) Duom. tipas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+(1,000,000) Klasė   &1559 ms   &1607 ms   &1599 ms   &1606 ms   &1597 ms   &1593 ms    \\\cline{1-7}
+(1,000,000) Struktūra   &1443 ms   &1338 ms   &1337 ms   &1359 ms   &1358 ms   &1367 ms    \\\cline{1-7}
+(10,000,000) Klasė   &16920 ms   &17292 ms   &17082 ms   &17048 ms   &17276 ms   &17123 ms    \\\cline{1-7}
+(10,000,000) Struktūra   &14104 ms   &14132 ms   &14284 ms   &14277 ms   &14272 ms   &14213 ms   \\\cline{1-7}
+\end{longtabu}
+
+
+Klasės metodo bin dydis\+: 117.\+92 KiB Struktūros metodo bin dydis\+: 119.\+91 KiB\hypertarget{md_README_autotoc_md66}{}\doxysubsubsection{\texorpdfstring{Veikimo greitis -\/O3}{Veikimo greitis -\/O3}}\label{md_README_autotoc_md66}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ (stud. sk.) Duom. tipas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ (stud. sk.) Duom. tipas   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 1   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 2   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 3   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 4   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Laikas 5   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Vidurkiai    }\\\cline{1-7}
+\endhead
+(1,000,000) Klasė   &1569 ms   &1556 ms   &1550 ms   &1551 ms   &1572 ms   &1559 ms    \\\cline{1-7}
+(1,000,000) Struktūra   &1264 ms   &1329 ms   &1291 ms   &1278 ms   &1292 ms   &1290 ms    \\\cline{1-7}
+(10,000,000) Klasė   &16396 ms   &16528 ms   &16528 ms   &16639 ms   &16589 ms   &16536 ms    \\\cline{1-7}
+(10,000,000) Struktūra   &13311 ms   &13454 ms   &13388 ms   &13425 ms   &13332 ms   &13382 ms   \\\cline{1-7}
+\end{longtabu}
+
+
+Klasės metodo bin dydis\+: 129.\+52 KiB Struktūros metodo bin dydis\+: 123.\+69 KiB 

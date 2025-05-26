@@ -1,0 +1,10 @@
+#ifndef CONSTANT_DEFINITIONS_H
+#define CONSTANT_DEFINITIONS_H
+
+#define NAME_LENGTH 17
+#define HW_WEIGHT 0.4
+#define EXAM_WEIGHT 0.6
+#define GRADE_MAX 10
+#define INPUT_FILE_NAME "kursiokai.txt"
+
+#endif //CONSTANT_DEFINITIONS_H

@@ -1,0 +1,15 @@
+cmake-build-debug
+cmake-build-default
+cmake-build-release
+.idea
+CMakeLists.txt
+kursiokai.txt
+*.exe
+*.gch
+*.txt
+*.out
+/build
+!CMakeLists.txt
+!test/test_cases/*
+/.vscode
+!mysetup.exe

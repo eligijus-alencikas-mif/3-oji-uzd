@@ -149,5 +149,9 @@ int main()
 
     t.pause_watch(1);
     t.write_times("laikai.txt");
+
+
+    cout << "\nPaspauskite bet kuri mygtuka, kad baigtumete darba...\n";
+    cin.get();
     return 0;
 }

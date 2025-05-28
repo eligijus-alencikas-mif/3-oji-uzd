@@ -2,11 +2,11 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 [Setup]
-AppName=Vardenis-Pavardenis
+AppName=Eligijus-Alencikas
 AppVersion=3.0
 WizardStyle=modern
-DefaultDirName={commonpf64}\VU\Vardenis-Pavardenis
-DefaultGroupName=Vardenis-Pavardenis
+DefaultDirName={commonpf64}\VU\Eligijus-Alencikas
+DefaultGroupName=Eligijus-Alencikas
 UninstallDisplayIcon={app}\1.5v_custom.exe
 Compression=lzma2
 SolidCompression=yes
@@ -21,5 +21,5 @@ Source: ".\build\10000.txt"; DestDir: "{app}"
 Source: ".\build\100000.txt"; DestDir: "{app}"
 
 [Icons]
-Name: "{group}\Vardenis-Pavardenis"; Filename: "{app}\1.5v_custom.exe"
-Name: {commondesktop}\Vardenis-Pavardenis; Filename: {app}\1.5v_custom.exe; Tasks: desktopicon
+Name: "{group}\Eligijus-Alencikas"; Filename: "{app}\1.5v_custom.exe"
+Name: {commondesktop}\Eligijus-Alencikas; Filename: {app}\1.5v_custom.exe; Tasks: desktopicon
